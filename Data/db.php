@@ -53,6 +53,8 @@ $movie = new Movie(
     '180 minutes',
 );
 
+var_dump($movie);
+
 $movie_2 = new Movie(
     'Spider-Man',
     [$genre_3, $genre_4],

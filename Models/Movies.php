@@ -26,11 +26,11 @@ class Movie {
         $this->length = $length;
     }
 
-
     public function getFullInfo()
     {
         return "$this->name $this->country $this->length";
     }
+
 };
 
 ?>
