@@ -4,8 +4,7 @@
  * Class Movie
  * Define a Movie
  * 
- * 
- */
+*/
 
 
 class Movie {
@@ -17,7 +16,7 @@ class Movie {
 
     public function __construct(
         string $name,
-        string $genre,
+        Genre $genre,
         string $country,
         string $length,
     ) {
@@ -29,7 +28,7 @@ class Movie {
 
     public function getFullInfo() 
     {
-        return "$this->name $this->genre $this->country $this->length";
+        return "$this->name $this->country $this->length";
     }
 };
 

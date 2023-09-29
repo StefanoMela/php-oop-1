@@ -1,22 +1,32 @@
 <?php 
 
 require_once __DIR__ . '/Models/Movies.php';
+require_once __DIR__ . '/Models/Genre.php';
+
+
+$new_genre = new Genre(
+
+    'Action',
+    'Horror',
+
+);
 
 
 $new_movie = new Movie(
     'Iron Man',
-    'Action',
+    $new_genre,
     'US / CAN',
     '180 minutes',
 );
 
 $new_movie_2 = new Movie(
     'Spider-Man',
-    'Action',
+    $new_genre,
     'US / CAN',
     '120 minutes',
 );
 var_dump($new_movie->getFullInfo());
+var_dump($new_movie->genre->getFullGenre());
 
 echo '<hr>';
 
