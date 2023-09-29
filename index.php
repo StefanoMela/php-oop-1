@@ -10,6 +10,12 @@ $new_genre = new Genre(
     'Horror',
 
 );
+$new_genre_2 = new Genre(
+
+    'Sci-Fi',
+    'Drama',
+
+);
 
 
 $new_movie = new Movie(
@@ -21,7 +27,7 @@ $new_movie = new Movie(
 
 $new_movie_2 = new Movie(
     'Spider-Man',
-    $new_genre,
+    $new_genre_2,
     'US / CAN',
     '120 minutes',
 );
@@ -31,6 +37,7 @@ var_dump($new_movie->genre->getFullGenre());
 echo '<hr>';
 
 var_dump($new_movie_2->getFullInfo());
+var_dump($new_movie_2->genre->getFullGenre());
 
 ?>
 
