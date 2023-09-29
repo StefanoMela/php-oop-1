@@ -9,24 +9,25 @@
 
 class Movie {
 
-    public $name;
-    public $genre;
+    public  $name;
+    public $genres;
     public $country;
     public $length;
 
     public function __construct(
         string $name,
-        Genre $genre,
+        array $genres,
         string $country,
         string $length,
     ) {
         $this->name = $name;
-        $this->genre = $genre;
+        $this->genres = $genres;
         $this->country = $country;
         $this->length = $length;
     }
 
-    public function getFullInfo() 
+
+    public function getFullInfo()
     {
         return "$this->name $this->country $this->length";
     }

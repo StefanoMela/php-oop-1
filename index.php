@@ -1,6 +1,6 @@
 <?php 
 
-include 'server.php';
+include './data/db.php';
 
 
 ?>
@@ -15,11 +15,12 @@ include 'server.php';
 <body>
     <h1>Film</h1>
     <ul>
-        <?php foreach($movie as $movie): ?>
+        <?php foreach($movies as $movie): ?>
         <li>
-            <?= $movie->getFullInfo() ?> - <?= $movie->genre->getFullGenre() ?>
+            <?= $movie->getFullInfo() ?>
         </li>
         <?php endforeach; ?>
     </ul>
 </body>
 </html>
+
