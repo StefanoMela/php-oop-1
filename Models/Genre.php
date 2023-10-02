@@ -18,13 +18,9 @@ class Genre
 
         $this->names = $names;
     }
-
     public function getGenre(){
-
-
         return implode("  -  " , $this->names);
     }
-
 };
 
 

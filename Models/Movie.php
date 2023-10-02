@@ -27,9 +27,9 @@ class Movie extends Production
             $name,
             $genres,
             $country,
-            $this->length = $length,
-            $this->year = $year,
         );
+        $this->length = $length;
+        $this->year = $year;
     }
 
     public function getFullInfo()
@@ -37,8 +37,8 @@ class Movie extends Production
 
         $genre = $this->genres->getGenre();
 
-        return 
-        "
+        return
+            "
         <strong>Nome: </strong>$this->name<br>
         <strong>Paese: </strong>$this->country<br>
         <strong>Genere: </strong>$genre<br>

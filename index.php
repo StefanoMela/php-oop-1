@@ -21,15 +21,15 @@ $genre_2 = new Genre(
 
 $mixed = [
 
-    $movie = new Movie(
+    new Movie(
         'Iron Man',
-        $genre,
+        new Genre(['Action - Comedy']),
         'US / CAN',
         '180 minuti',
         1993
     ),
 
-    $movie_2 = new Movie(
+    new Movie(
         'Spider-Man',
         $genre_2,
         'US / CAN',
@@ -37,22 +37,22 @@ $mixed = [
         2020
     ),
 
-    $tvSerie = new TvSerie(
+    new TvSerie(
         'Lost',
         $genre,
         'US',
-        '40 minuti',
+        '50 minutes',
         2001,
         2010,
         10,
         10
     ),
 
-    $tvSerie_2 = new TvSerie(
+    new TvSerie(
         'Dexter',
         $genre_2,
         'US',
-        '50 minuti',
+        '50 minutes',
         2001,
         2010,
         10,
@@ -68,6 +68,7 @@ $mixed = [
 
 <head>
     <meta charset="UTF-8">
+    <!-- BootStrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP Movies</title>

@@ -22,20 +22,19 @@ class TvSerie extends Production
         int $seasonal_episodes,
         int $numbers_of_season
     ) {
-
         parent::__construct(
 
             $name,
             $genres,
             $country,
-            $this->episode_length,
-            $this->aired_on = $aired_on,
-            $this->last_aired = $last_aired,
-            $this->seasonal_episodes = $seasonal_episodes,
-            $this->numbers_of_season = $numbers_of_season
-
         );
+        $this->episode_length = $episode_length;
+        $this->aired_on = $aired_on;
+        $this->last_aired = $last_aired;
+        $this->seasonal_episodes = $seasonal_episodes;
+        $this->numbers_of_season = $numbers_of_season;
     }
+
     public function getFullInfo()
     {
 
