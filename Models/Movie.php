@@ -8,10 +8,12 @@ require_once __DIR__ . '/Genre.php';
  * Class Movie
  * Define a Movie
  * 
-*/
+ */
 
-class Movie extends Production {
+class Movie extends Production
+{
 
+    public $length;
     public $year;
 
     public function __construct(
@@ -25,7 +27,7 @@ class Movie extends Production {
             $name,
             $genres,
             $country,
-            $length,
+            $this->length = $length,
             $this->year = $year,
         );
     }
@@ -35,7 +37,13 @@ class Movie extends Production {
 
         $genre = $this->genres->getGenre();
 
-        return "$this->name $this->country $genre $this->length $this->year";
+        return 
+        "
+        <strong>Nome: </strong>$this->name<br>
+        <strong>Paese: </strong>$this->country<br>
+        <strong>Genere: </strong>$genre<br>
+        <strong>Durata: </strong>$this->length<br>
+        <strong>Anno: </strong>$this->year<br>
+        ";
     }
-
 };

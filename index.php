@@ -25,7 +25,7 @@ $mixed = [
         'Iron Man',
         $genre,
         'US / CAN',
-        '180 minutes',
+        '180 minuti',
         1993
     ),
 
@@ -33,7 +33,7 @@ $mixed = [
         'Spider-Man',
         $genre_2,
         'US / CAN',
-        '120 minutes',
+        '120 minuti',
         2020
     ),
 
@@ -41,7 +41,7 @@ $mixed = [
         'Lost',
         $genre,
         'US',
-        '120mins',
+        '40 minuti',
         2001,
         2010,
         10,
@@ -52,7 +52,7 @@ $mixed = [
         'Dexter',
         $genre_2,
         'US',
-        '120mins',
+        '50 minuti',
         2001,
         2010,
         10,
@@ -74,7 +74,7 @@ $mixed = [
 </head>
 
 <body>
-    <div class="container">
+    <div class="container text-center">
         <h1>Film & Serie</h1>
         <div class="row g-3">
             <?php foreach ($mixed as $production) : ?>
