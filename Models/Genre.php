@@ -1,5 +1,6 @@
 <?php
 
+require_once __DIR__ . '/Production.php';
 /**
  * 
  * Class Genre
@@ -7,17 +8,24 @@
  * 
  */
 
-
 class Genre
 {
-    public $name;
-
-
+    public $names;
 
     public function __construct(
-        string $name,
+        array $names,
     ) {
 
-        $this->name = $name;
+        $this->names = $names;
     }
-}
+
+    public function getGenre(){
+
+
+        return implode("  -  " , $this->names);
+    }
+
+};
+
+
+?>

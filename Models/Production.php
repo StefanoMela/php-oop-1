@@ -1,22 +1,15 @@
 <?php
-/**
- *  
- * Class Movie
- * Define a Movie
- * 
-*/
 
+class Production {
 
-class Movie {
-
-    public  $name;
+    public $name;
     public $genres;
     public $country;
     public $length;
 
     public function __construct(
         string $name,
-        array $genres,
+        Genre $genres,
         string $country,
         string $length,
     ) {
@@ -28,9 +21,10 @@ class Movie {
 
     public function getFullInfo()
     {
-        return "$this->name $this->country $this->length";
-    }
 
+        $genre = $this->genres->getGenre();
+
+        return "$this->name $this->country $genre $this->length";
+    }
 };
 
-?>
